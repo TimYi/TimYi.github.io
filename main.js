@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, ".plain-markdown p {\n  margin-bottom: 0;\n}\n\n.first-p-inline p:nth-child(1) {\n  display: inline;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFDRSxnQkFBQTtBQUFKOztBQUtFO0VBQ0UsZUFBQTtBQUZKIiwiZmlsZSI6ImluZGV4LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucGxhaW4tbWFya2Rvd24ge1xuICBwIHtcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xuICB9XG59XG5cbi5maXJzdC1wLWlubGluZSB7XG4gIHA6bnRoLWNoaWxkKDEpIHtcbiAgICBkaXNwbGF5OiBpbmxpbmU7XG4gIH1cbn0iXX0= */", '', '']]
+module.exports = [[module.i, ".plain-markdown p {\n  margin-bottom: 0;\n}\n\n.first-p-inline p:nth-child(1) {\n  display: inline;\n}\n\n.contact-name {\n  min-height: 2.4em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFDRSxnQkFBQTtBQUFKOztBQUtFO0VBQ0UsZUFBQTtBQUZKOztBQU1BO0VBQ0UsaUJBQUE7QUFIRiIsImZpbGUiOiJpbmRleC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBsYWluLW1hcmtkb3duIHtcbiAgcCB7XG4gICAgbWFyZ2luLWJvdHRvbTogMDtcbiAgfVxufVxuXG4uZmlyc3QtcC1pbmxpbmUge1xuICBwOm50aC1jaGlsZCgxKSB7XG4gICAgZGlzcGxheTogaW5saW5lO1xuICB9XG59XG5cbi5jb250YWN0LW5hbWUge1xuICBtaW4taGVpZ2h0OiAyLjRlbTtcbn0iXX0= */", '', '']]
 
 /***/ }),
 
@@ -1110,21 +1110,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
     super(props);
     this.currentRef = void 0;
-    this.alumniRef = void 0;
     this.joinRef = void 0;
 
     this.scrollToCurrent = () => {
       var _this$currentRef$curr;
 
       (_this$currentRef$curr = this.currentRef.current) === null || _this$currentRef$curr === void 0 ? void 0 : _this$currentRef$curr.scrollIntoView({
-        behavior: 'smooth'
-      });
-    };
-
-    this.scrollToAlumni = () => {
-      var _this$alumniRef$curre;
-
-      (_this$alumniRef$curre = this.alumniRef.current) === null || _this$alumniRef$curre === void 0 ? void 0 : _this$alumniRef$curre.scrollIntoView({
         behavior: 'smooth'
       });
     };
@@ -1138,7 +1129,6 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     };
 
     this.currentRef = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createRef"])();
-    this.alumniRef = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createRef"])();
     this.joinRef = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["createRef"])();
   }
 
@@ -1149,7 +1139,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       })
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 152,
+      lineNumber: 146,
       columnNumber: 7
     }, this);
   }
@@ -1166,33 +1156,33 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       infoDivClass = 'col-md-6 flex-valign';
     }
 
-    imgDivClass = 'col-md-6 order-md-2';
-    infoDivClass = 'col-md-6 flex-valign text-md-right';
+    imgDivClass = 'w-100 text-center';
+    infoDivClass = 'w-100 text-md-center';
     return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
-      className: "row mb-5",
+      className: "col-md-4 col-sm-12 mb-5",
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
         className: imgDivClass,
         children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("img", {
           src: user.photo,
-          className: "img-fluid w-50 w-md-80 w-lg-60 labmemberimg shadow",
+          className: "w-75 labmemberimg shadow",
           alt: "labmember"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 177,
+          lineNumber: 171,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 176,
+        lineNumber: 170,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
         className: infoDivClass,
         children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("h3", {
-          className: "text-uppercase text-letter-spacing-xs mt-0 mb-1 text-dark font-weight-bold",
+          className: "text-uppercase text-letter-spacing-xs mt-0 mb-1 text-dark font-weight-bold contact-name",
           children: user.name
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 184,
+          lineNumber: 178,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("h5", {
           className: "my-0 font-weight-normal",
@@ -1202,12 +1192,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
                   children: [title, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: _jsxFileName,
-                    lineNumber: 194,
+                    lineNumber: 188,
                     columnNumber: 23
                   }, this)]
                 }, void 0, true, {
                   fileName: _jsxFileName,
-                  lineNumber: 192,
+                  lineNumber: 186,
                   columnNumber: 21
                 }, this);
               } else {
@@ -1216,45 +1206,45 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
             })
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 188,
+            lineNumber: 182,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 187,
+          lineNumber: 181,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("hr", {
           className: "hr-primary w-70 ml-0 ml-md-auto mr-md-0 mb-3"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 203,
+          lineNumber: 197,
           columnNumber: 11
         }, this), user.educationAndTraining ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("p", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("b", {
             children: "Education & Training"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 206,
+            lineNumber: 200,
             columnNumber: 15
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 207,
+            lineNumber: 201,
             columnNumber: 15
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react_markdown__WEBPACK_IMPORTED_MODULE_1___default.a, {
             className: "plain-markdown",
             children: user.educationAndTraining
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 208,
+            lineNumber: 202,
             columnNumber: 15
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 211,
+            lineNumber: 205,
             columnNumber: 15
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 205,
+          lineNumber: 199,
           columnNumber: 13
         }, this) : null, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("p", {
           children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("i", {
@@ -1262,18 +1252,18 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
             "aria-hidden": "true"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 215,
+            lineNumber: 209,
             columnNumber: 13
           }, this), " ", user.phone, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 216,
+            lineNumber: 210,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("i", {
             className: "fa fa-envelope",
             "aria-hidden": "true"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 217,
+            lineNumber: 211,
             columnNumber: 13
           }, this), ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("b", {
             children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("a", {
@@ -1281,16 +1271,16 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               children: user.email
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 219,
+              lineNumber: 213,
               columnNumber: 15
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 218,
+            lineNumber: 212,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 221,
+            lineNumber: 215,
             columnNumber: 13
           }, this), user.orcid ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("img", {
@@ -1302,7 +1292,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               alt: "orcid logo"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 224,
+              lineNumber: 218,
               columnNumber: 17
             }, this), ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("a", {
               target: "_blank",
@@ -1311,16 +1301,16 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               children: "0000-0003-3176-6829"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 230,
+              lineNumber: 224,
               columnNumber: 17
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 237,
+              lineNumber: 231,
               columnNumber: 17
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 223,
+            lineNumber: 217,
             columnNumber: 15
           }, this) : null, user.twitter ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("img", {
@@ -1332,7 +1322,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               alt: "twitter logo"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 242,
+              lineNumber: 236,
               columnNumber: 17
             }, this), ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("a", {
               target: "_blank",
@@ -1341,16 +1331,16 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               children: ["@", user.twitter]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 248,
+              lineNumber: 242,
               columnNumber: 17
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 255,
+              lineNumber: 249,
               columnNumber: 17
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 241,
+            lineNumber: 235,
             columnNumber: 15
           }, this) : null, user.linkedin ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("img", {
@@ -1362,7 +1352,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               alt: "linkedin logo"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 260,
+              lineNumber: 254,
               columnNumber: 17
             }, this), ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("a", {
               target: "_blank",
@@ -1371,31 +1361,31 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               children: ["$", user.linkedin]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 266,
+              lineNumber: 260,
               columnNumber: 17
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 273,
+              lineNumber: 267,
               columnNumber: 17
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 259,
+            lineNumber: 253,
             columnNumber: 15
           }, this) : null]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 214,
+          lineNumber: 208,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 183,
+        lineNumber: 177,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 175,
+      lineNumber: 169,
       columnNumber: 7
     }, this);
   }
@@ -1415,12 +1405,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
             className: "img-fluid w-50 w-md-80 w-lg-60 labmemberimg shadow"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 287,
+            lineNumber: 281,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 286,
+          lineNumber: 280,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
           className: "service-content text-left",
@@ -1429,7 +1419,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
             children: alumni.name
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 294,
+            lineNumber: 288,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("p", {
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("b", {
@@ -1438,12 +1428,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 children: alumni.title
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 297,
+                lineNumber: 291,
                 columnNumber: 17
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 296,
+              lineNumber: 290,
               columnNumber: 15
             }, this), "Subsequently:", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("em", {
               className: "plain-markdown first-p-inline",
@@ -1451,16 +1441,16 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 children: alumni.subsequently
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 301,
+                lineNumber: 295,
                 columnNumber: 17
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 300,
+              lineNumber: 294,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 303,
+              lineNumber: 297,
               columnNumber: 15
             }, this), alumni.orcid ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
               children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("img", {
@@ -1472,7 +1462,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 alt: "orcid logo"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 306,
+                lineNumber: 300,
                 columnNumber: 19
               }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("a", {
                 target: "_blank",
@@ -1481,16 +1471,16 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 children: alumni.orcid
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 312,
+                lineNumber: 306,
                 columnNumber: 19
               }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 319,
+                lineNumber: 313,
                 columnNumber: 19
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 305,
+              lineNumber: 299,
               columnNumber: 17
             }, this) : null, alumni.twitter ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
               children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("img", {
@@ -1502,7 +1492,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 alt: "twitter logo"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 324,
+                lineNumber: 318,
                 columnNumber: 19
               }, this), ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("a", {
                 target: "_blank",
@@ -1511,16 +1501,16 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 children: ["@", alumni.twitter]
               }, void 0, true, {
                 fileName: _jsxFileName,
-                lineNumber: 330,
+                lineNumber: 324,
                 columnNumber: 19
               }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 337,
+                lineNumber: 331,
                 columnNumber: 19
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 323,
+              lineNumber: 317,
               columnNumber: 17
             }, this) : null, alumni.linkedin ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
               children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("img", {
@@ -1532,7 +1522,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 alt: "linkedin logo"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 342,
+                lineNumber: 336,
                 columnNumber: 19
               }, this), ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("a", {
                 target: "_blank",
@@ -1541,36 +1531,36 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 children: alumni.linkedin
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 348,
+                lineNumber: 342,
                 columnNumber: 19
               }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("br", {}, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 355,
+                lineNumber: 349,
                 columnNumber: 19
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 341,
+              lineNumber: 335,
               columnNumber: 17
             }, this) : null]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 295,
+            lineNumber: 289,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 293,
+          lineNumber: 287,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 285,
+        lineNumber: 279,
         columnNumber: 9
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 284,
+      lineNumber: 278,
       columnNumber: 7
     }, this);
   }
@@ -1586,7 +1576,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
           className: "overlay-mf"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 372,
+          lineNumber: 366,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
           className: "intro-content display-table",
@@ -1599,7 +1589,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                 children: "Ruben Lab Members"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 376,
+                lineNumber: 370,
                 columnNumber: 17
               }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
                 className: "justify-content-center intro-subtitle",
@@ -1612,20 +1602,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                   children: "Current"
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 378,
-                  columnNumber: 19
-                }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("button", {
-                  className: "js-scroll btn btn-outline-light btn-sm",
-                  style: {
-                    fontSize: '1.5rem',
-                    marginRight: '0.5rem',
-                    marginLeft: '0.5rem'
-                  },
-                  onClick: this.scrollToAlumni,
-                  children: "Alumni"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 385,
+                  lineNumber: 372,
                   columnNumber: 19
                 }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("button", {
                   className: "js-scroll btn btn-outline-light btn-sm",
@@ -1636,32 +1613,32 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                   children: "JOIN"
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 396,
+                  lineNumber: 379,
                   columnNumber: 19
                 }, this)]
               }, void 0, true, {
                 fileName: _jsxFileName,
-                lineNumber: 377,
+                lineNumber: 371,
                 columnNumber: 17
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 375,
+              lineNumber: 369,
               columnNumber: 15
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 374,
+            lineNumber: 368,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 373,
+          lineNumber: 367,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 368,
+        lineNumber: 362,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("section", {
         className: "portfolio-details",
@@ -1674,84 +1651,37 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
               children: "Current"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 411,
+              lineNumber: 394,
               columnNumber: 15
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 410,
+            lineNumber: 393,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 409,
+          lineNumber: 392,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
           className: "container py-7",
           ref: this.currentRef,
-          children: this.renderUsers(users)
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
+            className: "row",
+            children: this.renderUsers(users)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 398,
+            columnNumber: 13
+          }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 414,
+          lineNumber: 397,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 408,
-        columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("section", {
-        className: "portfolio-mf sect-pt4 route",
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
-          className: "container",
-          ref: this.alumniRef,
-          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("hr", {}, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 420,
-            columnNumber: 13
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
-            className: "row",
-            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
-              className: "col-sm-12",
-              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
-                className: "title-box text-center",
-                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("h3", {
-                  className: "title-a",
-                  children: "Alumni"
-                }, void 0, false, {
-                  fileName: _jsxFileName,
-                  lineNumber: 424,
-                  columnNumber: 19
-                }, this)
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 423,
-                columnNumber: 17
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 422,
-              columnNumber: 15
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 421,
-            columnNumber: 13
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
-            className: "row",
-            children: alumnis.map(alumni => this.renderAlumni(alumni))
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 432,
-            columnNumber: 13
-          }, this)]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 419,
-          columnNumber: 11
-        }, this)
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 418,
+        lineNumber: 391,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("section", {
         ref: this.joinRef,
@@ -1772,7 +1702,7 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                       className: "service-ico"
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 444,
+                      lineNumber: 408,
                       columnNumber: 23
                     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
                       className: "title-box text-center",
@@ -1781,12 +1711,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                         children: "Join us"
                       }, void 0, false, {
                         fileName: _jsxFileName,
-                        lineNumber: 450,
+                        lineNumber: 414,
                         columnNumber: 25
                       }, this)
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 449,
+                      lineNumber: 413,
                       columnNumber: 23
                     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
                       className: "title-box-2",
@@ -1795,12 +1725,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                         children: "Graduate Students"
                       }, void 0, false, {
                         fileName: _jsxFileName,
-                        lineNumber: 454,
+                        lineNumber: 418,
                         columnNumber: 25
                       }, this)
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 453,
+                      lineNumber: 417,
                       columnNumber: 23
                     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("p", {
                       className: "lead",
@@ -1810,17 +1740,17 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                           children: "graduate program"
                         }, void 0, false, {
                           fileName: _jsxFileName,
-                          lineNumber: 460,
+                          lineNumber: 424,
                           columnNumber: 27
                         }, this)
                       }, void 0, false, {
                         fileName: _jsxFileName,
-                        lineNumber: 459,
+                        lineNumber: 423,
                         columnNumber: 25
                       }, this), ". During the first year of the PhD program, Scripps students can rotate in 2-4 labs prior to deciding on a thesis lab. Our lab is usually open for rotation students every quarter and will generally have room for 1-2 new graduate students per year."]
                     }, void 0, true, {
                       fileName: _jsxFileName,
-                      lineNumber: 456,
+                      lineNumber: 420,
                       columnNumber: 23
                     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("div", {
                       className: "title-box-2 mt-5",
@@ -1829,12 +1759,12 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                         children: "Postdoctoral Fellows"
                       }, void 0, false, {
                         fileName: _jsxFileName,
-                        lineNumber: 469,
+                        lineNumber: 433,
                         columnNumber: 25
                       }, this)
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 468,
+                      lineNumber: 432,
                       columnNumber: 23
                     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("p", {
                       className: "lead",
@@ -1844,64 +1774,64 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
                           children: "Ruben FERN\xC1NDEZ-BUSNADIEGO"
                         }, void 0, false, {
                           fileName: _jsxFileName,
-                          lineNumber: 475,
+                          lineNumber: 439,
                           columnNumber: 27
                         }, this)
                       }, void 0, false, {
                         fileName: _jsxFileName,
-                        lineNumber: 474,
+                        lineNumber: 438,
                         columnNumber: 25
                       }, this), ". Our lab welcomes applicants of any race, religion, national origin, gender identity, caregiver and family commitments, political affiliation, sexual orientation, and eligible age or ability. Furthermore, we are committed to maintaining a supportive and collaborative lab environment. Our lab doesn\u2019t post for specific positions, so we encourage exploratory inquiries!"]
                     }, void 0, true, {
                       fileName: _jsxFileName,
-                      lineNumber: 471,
+                      lineNumber: 435,
                       columnNumber: 23
                     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__["jsxDEV"])("p", {
                       className: "lead",
                       children: "All candidates will be encouraged to explore applying for extramural fellowships to support their research."
                     }, void 0, false, {
                       fileName: _jsxFileName,
-                      lineNumber: 486,
+                      lineNumber: 450,
                       columnNumber: 23
                     }, this)]
                   }, void 0, true, {
                     fileName: _jsxFileName,
-                    lineNumber: 443,
+                    lineNumber: 407,
                     columnNumber: 21
                   }, this)
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 442,
+                  lineNumber: 406,
                   columnNumber: 19
                 }, this)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 441,
+                lineNumber: 405,
                 columnNumber: 17
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 440,
+              lineNumber: 404,
               columnNumber: 15
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 439,
+            lineNumber: 403,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 438,
+          lineNumber: 402,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 437,
+        lineNumber: 401,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 367,
+      lineNumber: 361,
       columnNumber: 7
     }, this);
   }
@@ -7593,25 +7523,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_biorxiv_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/biorxiv.png */ "./assets/biorxiv.png");
-/* harmony import */ var _assets_openAccess_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/openAccess.svg */ "./assets/openAccess.svg");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../../../node_modules/react/jsx-dev-runtime.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../../../node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/home/ytm/git/Gottingen/rubenlab.org/apps/lab-website/src/app/publications/index.tsx";
 
 
-
-
-const prePublications = [{
-  name: 'Cryo-electron tomography of native Drosophila tissues vitrified by plunge freezing',
-  author: 'Felix J.B. Bäuerlein,  José C. Pastor-Pareja,  Rubén Fernández-Busnadiego',
-  preprintTime: 'April 14, 2021',
-  doi: '10.1101/2021.04.14.437159'
-}];
 const publications = [{
   name: 'Tricalbin‐mediated contact sites control ER curvature to maintain plasma membrane integrity',
   author: ' J. Collado, M. Kalemanov, A. Martínez-Sánchez, F. Campelo, W. Baumeister, C.J. Stefan and R. Fernández-Busnadiego',
-  publishTime: '2019',
+  publishTime: '2019 Nov 18',
   journal: {
     name: 'Dev Cell',
     number: '51(4):476-487.'
@@ -7620,8 +7540,7 @@ const publications = [{
   preprintTime: 'October 18, 2019',
   year: 2019,
   pmid: 31743662,
-  pmcid: 6863395,
-  openAccessUrl: 'https://pubmed.ncbi.nlm.nih.gov/31743662/' // associatedDescriptions: [
+  pmcid: 6863395 // associatedDescriptions: [
   //   [
   //     {
   //       url: 'https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-23061',
@@ -7643,9 +7562,48 @@ const publications = [{
   // ],
 
 }, {
+  name: 'Tricalbin‐mediated contact sites control ER curvature to maintain plasma membrane integrity',
+  author: ' J. Collado, M. Kalemanov, A. Martínez-Sánchez, F. Campelo, W. Baumeister, C.J. Stefan and R. Fernández-Busnadiego',
+  publishTime: '2019 Nov 18',
+  journal: {
+    name: 'Dev Cell',
+    number: '51(4):476-487.'
+  },
+  preprintLink: 'https://doi.org/10.1016/j.devcel.2019.10.018',
+  preprintTime: 'October 18, 2019',
+  year: 2019,
+  pmid: 31743662,
+  pmcid: 6863395
+}, {
+  name: 'Tricalbin‐mediated contact sites control ER curvature to maintain plasma membrane integrity',
+  author: ' J. Collado, M. Kalemanov, A. Martínez-Sánchez, F. Campelo, W. Baumeister, C.J. Stefan and R. Fernández-Busnadiego',
+  publishTime: '2019 Nov 18',
+  journal: {
+    name: 'Dev Cell',
+    number: '51(4):476-487.'
+  },
+  preprintLink: 'https://doi.org/10.1016/j.devcel.2019.10.018',
+  preprintTime: 'October 18, 2019',
+  year: 2019,
+  pmid: 31743662,
+  pmcid: 6863395
+}, {
+  name: 'Tricalbin‐mediated contact sites control ER curvature to maintain plasma membrane integrity',
+  author: ' J. Collado, M. Kalemanov, A. Martínez-Sánchez, F. Campelo, W. Baumeister, C.J. Stefan and R. Fernández-Busnadiego',
+  publishTime: '2019 Nov 18',
+  journal: {
+    name: 'Dev Cell',
+    number: '51(4):476-487.'
+  },
+  preprintLink: 'https://doi.org/10.1016/j.devcel.2019.10.018',
+  preprintTime: 'October 18, 2019',
+  year: 2019,
+  pmid: 31743662,
+  pmcid: 6863395
+}, {
   name: 'The cryo-EM structure of huntingtin.',
   author: 'Q. Guo, B. Huang, J. Cheng, M. Seefelder, T. Engler, G. Pfeifer, P. Oeckl, M. Otto, F. Moser, M. Maurer, A. Pautsch, W. Baumeister, R. Fernández-Busnadiego* and S. Kochanek.',
-  publishTime: '2018',
+  publishTime: '2018 Mar 1',
   journal: {
     name: 'Nature',
     number: '555(7694): 117-120.'
@@ -7654,12 +7612,11 @@ const publications = [{
   preprintTime: '21 February 2018',
   year: 2018,
   pmid: 29466333,
-  pmcid: 5837020,
-  openAccessUrl: 'https://www.nature.com/articles/nature25502'
+  pmcid: 5837020
 }, {
   name: 'In situ structure of neuronal C9orf72 poly-GA aggregates reveals proteasome recruitment.',
   author: 'Q. Guo, C. Lehmer, A. Martínez-Sánchez, T. Rudack, F. Beck, H. Hartmann, M.S. Hipp, F.U. Hartl, D. Edbauer and W. Baumeister and R. Fernández-Busnadiego.',
-  publishTime: '2018',
+  publishTime: '2018 Feb 8',
   journal: {
     name: 'Cell',
     number: '172(4): 696-705.'
@@ -7668,247 +7625,173 @@ const publications = [{
   pmid: 29398115,
   pmcid: 6035389,
   preprintLink: 'https://doi.org/10.1016/j.cell.2017.12.030',
-  preprintTime: '12 December 2017',
-  openAccessUrl: 'https://pubmed.ncbi.nlm.nih.gov/29398115/'
+  preprintTime: '12 December 2017'
+}, {
+  name: 'In situ structure of neuronal C9orf72 poly-GA aggregates reveals proteasome recruitment.',
+  author: 'Q. Guo, C. Lehmer, A. Martínez-Sánchez, T. Rudack, F. Beck, H. Hartmann, M.S. Hipp, F.U. Hartl, D. Edbauer and W. Baumeister and R. Fernández-Busnadiego.',
+  publishTime: '2018 Feb 8',
+  journal: {
+    name: 'Cell',
+    number: '172(4): 696-705.'
+  },
+  year: 2018,
+  pmid: 29398115,
+  pmcid: 6035389,
+  preprintLink: 'https://doi.org/10.1016/j.cell.2017.12.030',
+  preprintTime: '12 December 2017'
+}, {
+  name: 'In situ structure of neuronal C9orf72 poly-GA aggregates reveals proteasome recruitment.',
+  author: 'Q. Guo, C. Lehmer, A. Martínez-Sánchez, T. Rudack, F. Beck, H. Hartmann, M.S. Hipp, F.U. Hartl, D. Edbauer and W. Baumeister and R. Fernández-Busnadiego.',
+  publishTime: '2018 Feb 8',
+  journal: {
+    name: 'Cell',
+    number: '172(4): 696-705.'
+  },
+  year: 2018,
+  pmid: 29398115,
+  pmcid: 6035389,
+  preprintLink: 'https://doi.org/10.1016/j.cell.2017.12.030',
+  preprintTime: '12 December 2017'
+}, {
+  name: 'In situ structure of neuronal C9orf72 poly-GA aggregates reveals proteasome recruitment.',
+  author: 'Q. Guo, C. Lehmer, A. Martínez-Sánchez, T. Rudack, F. Beck, H. Hartmann, M.S. Hipp, F.U. Hartl, D. Edbauer and W. Baumeister and R. Fernández-Busnadiego.',
+  publishTime: '2018 Feb 8',
+  journal: {
+    name: 'Cell',
+    number: '172(4): 696-705.'
+  },
+  year: 2018,
+  pmid: 29398115,
+  pmcid: 6035389,
+  preprintLink: 'https://doi.org/10.1016/j.cell.2017.12.030',
+  preprintTime: '12 December 2017'
 }];
 class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.groupRefs = void 0;
+    this.groupRefs = [];
+  }
+
+  getPubmedUrl(publication) {
+    if (publication.pmid) {
+      return `https://www.ncbi.nlm.nih.gov/pubmed/${publication.pmid}`;
+    } else if (publication.pmcid) {
+      return `http://ncbi.nlm.nih.gov/pmc/articles/${publication.pmcid}`;
+    } else {
+      return '';
+    }
+  }
+
+  gotoGroup(index, e) {
+    e.preventDefault();
+    const element = this.groupRefs[index];
+
+    if (!element) {
+      return;
+    }
+
+    const headerOffset = 90;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+
   renderPublication(publication) {
-    const prePublication = publication;
-    const published = publication;
-    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+    const pubmedUrl = this.getPubmedUrl(publication);
+    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
       className: "container pub-box module already-visible",
-      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
         className: "overlay-pub"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 135,
+        lineNumber: 234,
         columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
         className: "row",
-        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
           className: "col-sm",
-          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("b", {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("b", {
             children: publication.name
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 138,
+            lineNumber: 237,
             columnNumber: 13
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("br", {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 139,
+            lineNumber: 238,
             columnNumber: 13
-          }, this), publication.author, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
+          }, this), publication.author, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("br", {}, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 141,
+            lineNumber: 240,
             columnNumber: 13
-          }, this), published.journal ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("b", {
-              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("i", {
-                children: published.journal.name
+          }, this), publication.journal ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("b", {
+              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("i", {
+                children: publication.journal.name
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 145,
+                lineNumber: 244,
                 columnNumber: 19
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 144,
+              lineNumber: 243,
               columnNumber: 17
-            }, this), ' ; ', published.journal.number, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 149,
-              columnNumber: 17
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 143,
-            columnNumber: 15
-          }, this) : null, publication.publishTime ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: ["Published ", publication.publishTime]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 153,
-            columnNumber: 15
-          }, this) : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: ["Online ", publication.preprintTime]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 157,
-            columnNumber: 15
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 161,
-            columnNumber: 13
-          }, this), publication.doi ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("b", {
-              children: "DOI:"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 164,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-              href: `http://dx.doi.org/${publication.doi}`,
+            }, this), ' ; ', publication.publishTime, ' ; ', publication.journal.number, /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("a", {
+              href: pubmedUrl,
               target: "_blank",
               rel: "noreferrer",
-              children: publication.doi
+              children: "PubMed"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 165,
+              lineNumber: 250,
+              columnNumber: 17
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("br", {}, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 253,
               columnNumber: 17
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 163,
+            lineNumber: 242,
             columnNumber: 15
-          }, this) : null, published.preprintLink ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
-              alt: "bioRxiv",
-              className: "inline-block",
-              style: {
-                height: '1em'
-              },
-              src: _assets_biorxiv_png__WEBPACK_IMPORTED_MODULE_1__["default"]
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 178,
-              columnNumber: 17
-            }, this), ' ', /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-              href: published.preprintLink,
+          }, this) : null, publication.preprintLink ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("a", {
+              href: publication.preprintLink,
               target: "_blank",
               rel: "noreferrer",
               children: "Associated preprint"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 184,
+              lineNumber: 258,
               columnNumber: 17
-            }, this), ' (posted ', published.preprintTime, ")", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
+            }, this), ' (posted ', publication.preprintTime, ")", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("br", {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 193,
+              lineNumber: 267,
               columnNumber: 17
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 177,
+            lineNumber: 257,
             columnNumber: 15
           }, this) : null]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 137,
+          lineNumber: 236,
           columnNumber: 11
-        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
-          className: "col-sm-auto text-right",
-          children: [published.pmid ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-              href: `https://www.ncbi.nlm.nih.gov/pubmed/${published.pmid}`,
-              target: "_blank",
-              className: "btn btn-outline-dark btn-sm pub-button",
-              rel: "noreferrer",
-              children: ["PMID ", published.pmid]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 200,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 208,
-              columnNumber: 17
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 199,
-            columnNumber: 15
-          }, this) : null, published.pmcid ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-              href: `http://ncbi.nlm.nih.gov/pmc/articles/${published.pmcid}`,
-              target: "_blank",
-              className: "btn btn-outline-dark btn-sm pub-button",
-              rel: "noreferrer",
-              children: ["PMCID ", published.pmcid]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 213,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 221,
-              columnNumber: 17
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 212,
-            columnNumber: 15
-          }, this) : null, published.downloadUrl ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-              target: "_blank",
-              href: published.downloadUrl,
-              className: "btn btn-outline-dark btn-sm pub-button mb-2",
-              rel: "noreferrer",
-              children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("i", {
-                className: "fa fa-download",
-                "aria-hidden": "true"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 232,
-                columnNumber: 19
-              }, this), " Full Text"]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 226,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 235,
-              columnNumber: 17
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 225,
-            columnNumber: 15
-          }, this) : null, published.openAccessUrl ? /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
-              target: "_blank",
-              href: published.openAccessUrl,
-              className: "btn btn-outline-dark btn-sm pub-button open-access mb-2",
-              rel: "noreferrer",
-              children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("img", {
-                alt: "open access",
-                className: "inline-block",
-                style: {
-                  height: '1em'
-                },
-                src: _assets_openAccess_svg__WEBPACK_IMPORTED_MODULE_2__["default"]
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 246,
-                columnNumber: 19
-              }, this), ' ', "Open Access"]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 240,
-              columnNumber: 17
-            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 254,
-              columnNumber: 17
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 239,
-            columnNumber: 15
-          }, this) : null, publication.associatedDescriptions && publication.associatedDescriptions.length > 0 ? this.renderAssociatedDescriptions(publication.associatedDescriptions) : null]
-        }, void 0, true, {
-          fileName: _jsxFileName,
-          lineNumber: 197,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
+        }, this)
+      }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 136,
+        lineNumber: 235,
         columnNumber: 9
       }, this)]
     }, publication.name, true, {
       fileName: _jsxFileName,
-      lineNumber: 131,
+      lineNumber: 230,
       columnNumber: 7
     }, this);
   }
@@ -7933,141 +7816,170 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       }
     }
 
-    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-      children: groups.map(g => {
-        return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
+        className: "mt-5"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 294,
+        columnNumber: 9
+      }, this), groups.map((g, i, arr) => {
+        return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("a", {
+            href: ".",
+            onClick: e => this.gotoGroup(i, e),
+            children: g.year
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 298,
+            columnNumber: 15
+          }, this), ' ', i === arr.length - 1 ? null : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+            children: "\xA0\xA0|\xA0\xA0"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 302,
+            columnNumber: 17
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 297,
+          columnNumber: 13
+        }, this);
+      }), groups.map((g, i) => {
+        return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
           className: "row",
-          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+          ref: el => this.groupRefs[i] = el,
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
             className: "col-sm-2 no-padding",
-            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("span", {
+            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("h3", {
               className: "year-label",
               children: g.year
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 291,
+              lineNumber: 311,
               columnNumber: 17
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 290,
+            lineNumber: 310,
             columnNumber: 15
-          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
             className: "col-sm-12 no-padding-left",
             children: g.publications.map(p => this.renderPublication(p))
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 293,
+            lineNumber: 313,
             columnNumber: 15
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 289,
+          lineNumber: 309,
           columnNumber: 13
         }, this);
-      })
-    }, void 0, false, {
+      })]
+    }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 286,
+      lineNumber: 293,
       columnNumber: 7
     }, this);
   }
 
   renderAssociatedDescriptions(associatedDescriptions) {
-    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("b", {
+    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("b", {
         children: "Associated Depositions:"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 308,
+        lineNumber: 328,
         columnNumber: 9
-      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("br", {}, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 309,
+        lineNumber: 329,
         columnNumber: 9
       }, this), associatedDescriptions.map((asso, index, arr) => {
         const isLast = index === arr.length - 1;
 
         if (Array.isArray(asso)) {
-          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
             children: [asso.map((link, i, links) => {
               const lastLink = i === links.length - 1;
-              return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-                children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
+              return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+                children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("a", {
                   href: link.url,
                   target: "_blank",
                   rel: "noreferrer",
                   children: link.value
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 319,
+                  lineNumber: 339,
                   columnNumber: 23
                 }, this), lastLink ? null : ' | ']
               }, i, true, {
                 fileName: _jsxFileName,
-                lineNumber: 318,
+                lineNumber: 338,
                 columnNumber: 21
               }, this);
-            }), isLast ? null : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
+            }), isLast ? null : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("br", {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 326,
+              lineNumber: 346,
               columnNumber: 34
             }, this)]
           }, index, true, {
             fileName: _jsxFileName,
-            lineNumber: 314,
+            lineNumber: 334,
             columnNumber: 15
           }, this);
         } else {
-          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("a", {
+          return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("a", {
               href: asso.url,
               target: "_blank",
               rel: "noreferrer",
               children: asso.value
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 332,
+              lineNumber: 352,
               columnNumber: 17
-            }, this), isLast ? null : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("br", {}, void 0, false, {
+            }, this), isLast ? null : /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("br", {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 335,
+              lineNumber: 355,
               columnNumber: 34
             }, this)]
           }, index, true, {
             fileName: _jsxFileName,
-            lineNumber: 331,
+            lineNumber: 351,
             columnNumber: 15
           }, this);
         }
       })]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 307,
+      lineNumber: 327,
       columnNumber: 7
     }, this);
   }
 
   render() {
-    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("section", {
+    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("section", {
         className: "portfolio-mf route content",
-        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__["jsxDEV"])("div", {
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__["jsxDEV"])("div", {
           className: "container",
           id: "publications",
           children: this.renderPublications(publications)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 387,
+          lineNumber: 407,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 386,
+        lineNumber: 406,
         columnNumber: 9
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 346,
+      lineNumber: 366,
       columnNumber: 7
     }, this);
   }
@@ -8084,19 +7996,6 @@ class Home extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "Ruben_Fernandez-Busnadiego.8a97845.png";
-
-/***/ }),
-
-/***/ "./assets/biorxiv.png":
-/*!****************************!*\
-  !*** ./assets/biorxiv.png ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("data:image/png;base64,AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAQAMAABMLAAATCwAAAAAAAAAAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////j4+SMjI1ram1jYmWMjI7j4+T////U0fF5cdKemt77+/7////r6/iMhdh8ddPV1PHj4+MZGBxHRkmEg4VISEskIyfLy8fOyvUUBLCbld3////19ftWS8YkFbauquP7+/7t7e0iISWioqP///////9VVFdDQz/Kx+wlFriwrOX///93b9EiE7XAven////////s7OwiISWbm5z///////+hoaIdHRqqpswpGry5tue0sOYeDrSfmd/////////////s7OwhICSfn6D///////+BgYMhIR6xrdMwIb2HgtYzJbtkW8r////////////////s7OwnJipycXPDw8Sgn6EVFBhra2bSz/QpGriLhdiOh9lCNsCOh9n9/f7////////s7OwnJiqCgoRTU1UlJChnZ2nw8O3SzvQiE7WxreX///+3s+cfELS7uOj////////u7u4iISWfn6D8/Pzz8/P////////Mye4iE7WzsOX////V1PEfELWWkNz////////f398PDhKWlpf////////////////FwuwcDbNpYM2XkdxFOcA1J7vX1vH////////Z2dmOjo/Hx8j////////////////Pze9vZ89tZM5oX8yGf9bZ2PL///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AACsrAAArKwAAQhIAAADQAAABkQAAAAAAAAAAAAAAAAAAAAAAAAAQAABCEgAAANAAAAAAAAByQAAAAAAAAAAA");
 
 /***/ }),
 
@@ -8221,69 +8120,6 @@ module.exports = __webpack_require__.p + "Dirk Schwitters.2f4698b.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "Eri.777f7da.jpg";
-
-/***/ }),
-
-/***/ "./assets/openAccess.svg":
-/*!*******************************!*\
-  !*** ./assets/openAccess.svg ***!
-  \*******************************/
-/*! exports provided: default, ReactComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReactComponent", function() { return ForwardRef; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _path, _circle, _circle2;
-
-var _excluded = ["title", "titleId"];
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-function SvgOpenAccess(_ref, svgRef) {
-  var title = _ref.title,
-      titleId = _ref.titleId,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("svg", _extends({
-    xmlns: "http://www.w3.org/2000/svg",
-    width: 640,
-    height: 1000,
-    ref: svgRef,
-    "aria-labelledby": titleId
-  }, props), title ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("title", {
-    id: titleId
-  }, title) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("g", {
-    style: {
-      fill: "none",
-      strokeWidth: 100,
-      stroke: "#f68212"
-    }
-  }, _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
-    d: "M111.4 308.1V272.4A209.2 209.2 0 0 1 529.8 272.4V530.8"
-  })), _circle || (_circle = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("circle", {
-    cx: 320,
-    cy: 680.7,
-    r: 256.1
-  }))), _circle2 || (_circle2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("circle", {
-    cx: 321,
-    cy: 681.7,
-    r: 86.4,
-    fill: "#f68212"
-  })));
-}
-
-var ForwardRef = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"](SvgOpenAccess);
-/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMTAwMCI+CiAgPGcgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MTAwO3N0cm9rZTojZjY4MjEyIj4KICAgIDxwYXRoIGQ9Ik0xMTEuNCAzMDguMVYyNzIuNEEyMDkuMiAyMDkuMiAwIDAgMSA1MjkuOCAyNzIuNFY1MzAuOCIvPgogICAgPGNpcmNsZSBjeD0iMzIwIiBjeT0iNjgwLjciIHI9IjI1Ni4xIi8+CiAgPC9nPgogIDxjaXJjbGUgY3g9IjMyMSIgY3k9IjY4MS43IiByPSI4Ni40IiBmaWxsPSIjZjY4MjEyIi8+Cjwvc3ZnPg==");
-
 
 /***/ }),
 
